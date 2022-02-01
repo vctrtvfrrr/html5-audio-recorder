@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoC gravação de audio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="recorder.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="records">
+        <div>
+          <button type="button" class="rec-button">
+            <svg
+              class="mic"
+              style="width: 24px; height: 24px"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"
+              />
+            </svg>
+            <svg
+              class="stop"
+              style="width: 24px; height: 24px"
+              viewBox="0 0 24 24"
+            >
+              <path fill="currentColor" d="M18,18H6V6H18V18Z" />
+            </svg>
+          </button>
+        </div>
+
+        <div id="audio"></div>
+      </div>
+    </div>
+  </body>
+</html>
